@@ -16,11 +16,13 @@ import re
 itunes_xml_path_windows = "C:\Users\Kai\Music\iTunes\iTunes Music Library.xml"
 itunes_path_windows = 'C:\\Program Files (x86)\\iTunes\\iTunes.exe'
 artist_folder_path_windows = "C:\\Users\\Kai\\Music\\Artists\\"
+join_character_windows = "\\"
 
 #env = "mac_laptop"
-itunes_xml_path_mac = "/Users/administrator/Music/iTunes/iTunes Music Library.xml"
+itunes_xml_path_mac = "/Users/administrator/Music/iTunes/iTunes Library.xml"
 itunes_path_mac = "/Applications/iTunes.app"
-artist_folder_path_mac = "/Users/administrator/Music/Artists"
+artist_folder_path_mac = "/Users/administrator/Music/Artists/"
+join_character_mac = "/"
 
 envAliases = [
     ['windows_desktop', 'w'],
@@ -141,7 +143,10 @@ def download_and_import_library(library):
 def import_song(filename):
     #command = "\"C:\\Program Files (x86)\\iTunes\\iTunes.exe\"" " + filename + ""
     
-    subprocess.call([itunes_path, filename])
+    if env == "windows_desktop":
+        subprocess.call([itunes_path, filename])
+    elif env == "mac_laptop":
+        subprocess.call(["open", filename])
     
     #print command
     #os.system(command)
@@ -164,7 +169,7 @@ def download_song(mm, song):
     if not os.path.exists(dirname):
         os.makedirs(dirname)
     
-    fullname = dirname + "\\" + filename
+    fullname = dirname + join_character + filename
     fullname = unidecode(fullname)
     #fullname = fullname.encode('ascii', 'xmlcharrefreplace')
     fullname = re.sub("\s", " ", fullname)
@@ -243,14 +248,14 @@ def write_library(name, library):
 
 def load_environment():
     
-    env = raw_input("What environment?")
+    qenv = raw_input("What environment?")
     
     oneFound = False
     realenv = ''
     for environment in envAliases:
         thisone = False
         for alias in environment:
-            if alias == env:
+            if alias == qenv:
                 thisone = True
                 break
         
@@ -263,21 +268,27 @@ def load_environment():
     if oneFound:
         set_environment(realenv)
 
-def set_environment(env):
+def set_environment(qenv):
+    
+    global env
+    env = qenv
     
     global itunes_xml_path
     global itunes_path
     global artist_folder_path
+    global join_character
     
     if env == "windows_desktop":
         itunes_xml_path = itunes_xml_path_windows
         itunes_path = itunes_path_windows
         artist_folder_path = artist_folder_path_windows
+        join_character = join_character_windows
     
     elif env == "mac_laptop":
         itunes_xml_path = itunes_xml_path_mac
         itunes_path = itunes_path_mac
         artist_folder_path = artist_folder_path_mac
+        join_character = join_character_mac
 
 def main():
     #print_library(google_play_connection())
