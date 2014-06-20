@@ -16,12 +16,27 @@ itunes_xml_path_windows = "C:\Users\Kai\Music\iTunes\iTunes Music Library.xml"
 itunes_path_windows = 'C:\\Program Files (x86)\\iTunes\\iTunes.exe'
 artist_folder_path_windows = "C:\\Users\\Kai\\Music\\Artists\\"
 
+<<<<<<< HEAD
 env = "windows_desktop"
+=======
+itunes_xml_path_mac = "/Users/administrator/Music/iTunes/iTunes Music Library.xml"
+itunes_path_mac = "/Applications/iTunes.app"
+artist_folder_path_mac = "/Users/administrator/Music/Artists"
+
+env = "mac_laptop"
+>>>>>>> f9bf8cea64ea515a522364c0c1270a9463be07ee
 
 if env == "windows_desktop":
     itunes_xml_path = itunes_xml_path_windows
     itunes_path = itunes_path_windows
     artist_folder_path = artist_folder_path_windows
+<<<<<<< HEAD
+=======
+elif env == "mac_laptop":
+    itunes_xml_path = itunes_xml_path_mac
+    itunes_path = itunes_path_mac
+    artist_folder_path = artist_folder_path_mac
+>>>>>>> f9bf8cea64ea515a522364c0c1270a9463be07ee
 
 default_email = 'kaimarshland@gmail.com'
 
@@ -250,7 +265,14 @@ def main():
     print "%d not in Google Play" % (len(not_in_play))
     print 
     
+<<<<<<< HEAD
     download_and_import_library(not_in_itunes)
+=======
+    if raw_input("Do you want to download the files? (y/n)") == "y":
+        download_and_import_library(not_in_itunes)
+    
+    
+>>>>>>> f9bf8cea64ea515a522364c0c1270a9463be07ee
 
 if __name__ == '__main__':
     main()
