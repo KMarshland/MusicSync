@@ -7803,3 +7803,169 @@ logging to: ./gmusicapi.log
 2014-06-19 15:17:56,946 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: ListTracks(args=[], kwargs={'start_token': None, 'max_results': 20000})
 2014-06-19 15:18:04,524 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: {u'kind': u'sj#trackList', u'data': {u'items': ['<2112 tracks>']}}
 >>>>>>> f9bf8cea64ea515a522364c0c1270a9463be07ee
+!-- begin debug log --!
+version: 3.1.0
+logging to: .\gmusicapi.log
+2014-06-19 21:31:05,665 - gmusicapi.Mobileclient1 (shared:70) [INFO]: initialized
+2014-06-19 21:31:05,665 - gmusicapi.Mobileclient1 (shared:93) [INFO]: logged out
+2014-06-19 21:31:16,694 - gmusicapi.Mobileclient2 (shared:70) [INFO]: initialized
+2014-06-19 21:31:16,694 - gmusicapi.Mobileclient2 (shared:93) [INFO]: logged out
+2014-06-19 21:31:16,736 - gmusicapi.Mobileclient2 (shared:204) [DEBUG]: ClientLogin(<omitted>)
+2014-06-19 21:31:17,763 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: Init(args=[], kwargs={})
+2014-06-19 21:31:18,438 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: 
+2014-06-19 21:31:18,438 - gmusicapi.Mobileclient2 (mobileclient:41) [INFO]: authenticated
+2014-06-19 21:31:18,441 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: ListTracks(args=[], kwargs={'start_token': None, 'max_results': 20000})
+2014-06-19 21:31:20,487 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: {u'kind': u'sj#trackList', u'data': {u'items': ['<2112 tracks>']}}
+2014-06-19 21:31:22,046 - gmusicapi.Musicmanager3 (shared:70) [INFO]: initialized
+2014-06-19 21:31:22,048 - gmusicapi.Musicmanager3 (shared:93) [INFO]: logged out
+2014-06-19 21:31:22,532 - gmusicapi.Musicmanager3 (musicmanager:183) [INFO]: oauth successful
+2014-06-19 21:31:22,535 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: AuthenticateUploader(args=['00:25:64:F3:E8:60', u'Kai-PC (gmusicapi-3.1.0)'], kwargs={})
+2014-06-19 21:31:22,943 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: response_type: AUTH_RESPONSE
+policy {
+  pause_uploads: false
+  abort: false
+  retry_in_minutes: 5
+  bandwidth_cap_kbps: 12000
+  pause_downloads: false
+  download_bandwidth_cap_kbps: 16000
+  send_analytics: false
+  enable_gapless: true
+  enable_m4p: true
+}
+auth_status: OK
+auth_error: false
+
+2014-06-19 21:31:22,943 - gmusicapi.Musicmanager3 (musicmanager:220) [INFO]: successful upauth
+2014-06-19 21:31:22,950 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'4795a438-a2e3-3bf7-bf1e-d3ccfb6a2bad', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:31:23,417 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=e388be5afd6d1393&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=4795a438-a2e3-3bf7-bf1e-d3ccfb6a2bad&ip=0.0.0.0&ipbits=0&expire=1403238770&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=C160434462C90E57213C5C070F0C2780867C427B.ACE71DA507C46881F20899BE27B300F35E5ED18A&key=sj3'}
+2014-06-19 21:31:23,420 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=e388be5afd6d1393&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:31:26,167 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 1041130 bytes; disposition: 'attachment; filename="59 - 59 Owl, Boreal - Nestling chatter, female peep.mp3"; filename*=UTF-8\'\'59%20-%2059%20Owl%2C%20Boreal%20-%20Nestling%20chatter%2C%20female%20peep.mp3'
+!-- begin debug log --!
+version: 3.1.0
+logging to: .\gmusicapi.log
+2014-06-19 21:32:57,193 - gmusicapi.Mobileclient1 (shared:70) [INFO]: initialized
+2014-06-19 21:32:57,193 - gmusicapi.Mobileclient1 (shared:93) [INFO]: logged out
+2014-06-19 21:33:08,154 - gmusicapi.Mobileclient2 (shared:70) [INFO]: initialized
+2014-06-19 21:33:08,154 - gmusicapi.Mobileclient2 (shared:93) [INFO]: logged out
+2014-06-19 21:33:08,200 - gmusicapi.Mobileclient2 (shared:204) [DEBUG]: ClientLogin(<omitted>)
+2014-06-19 21:33:09,102 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: Init(args=[], kwargs={})
+2014-06-19 21:33:09,750 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: 
+2014-06-19 21:33:09,750 - gmusicapi.Mobileclient2 (mobileclient:41) [INFO]: authenticated
+2014-06-19 21:33:09,756 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: ListTracks(args=[], kwargs={'start_token': None, 'max_results': 20000})
+2014-06-19 21:33:11,737 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: {u'kind': u'sj#trackList', u'data': {u'items': ['<2112 tracks>']}}
+!-- begin debug log --!
+version: 3.1.0
+logging to: .\gmusicapi.log
+2014-06-19 21:33:53,302 - gmusicapi.Mobileclient1 (shared:70) [INFO]: initialized
+2014-06-19 21:33:53,302 - gmusicapi.Mobileclient1 (shared:93) [INFO]: logged out
+2014-06-19 21:34:11,158 - gmusicapi.Mobileclient2 (shared:70) [INFO]: initialized
+2014-06-19 21:34:11,158 - gmusicapi.Mobileclient2 (shared:93) [INFO]: logged out
+2014-06-19 21:34:11,194 - gmusicapi.Mobileclient2 (shared:204) [DEBUG]: ClientLogin(<omitted>)
+2014-06-19 21:34:12,213 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: Init(args=[], kwargs={})
+2014-06-19 21:34:12,898 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: 
+2014-06-19 21:34:12,898 - gmusicapi.Mobileclient2 (mobileclient:41) [INFO]: authenticated
+2014-06-19 21:34:12,901 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: ListTracks(args=[], kwargs={'start_token': None, 'max_results': 20000})
+2014-06-19 21:34:14,877 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: {u'kind': u'sj#trackList', u'data': {u'items': ['<2112 tracks>']}}
+2014-06-19 21:34:37,740 - gmusicapi.Musicmanager3 (shared:70) [INFO]: initialized
+2014-06-19 21:34:37,740 - gmusicapi.Musicmanager3 (shared:93) [INFO]: logged out
+2014-06-19 21:34:38,190 - gmusicapi.Musicmanager3 (musicmanager:183) [INFO]: oauth successful
+2014-06-19 21:34:38,196 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: AuthenticateUploader(args=['00:25:64:F3:E8:60', u'Kai-PC (gmusicapi-3.1.0)'], kwargs={})
+2014-06-19 21:34:38,576 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: response_type: AUTH_RESPONSE
+policy {
+  pause_uploads: false
+  abort: false
+  retry_in_minutes: 5
+  bandwidth_cap_kbps: 12000
+  pause_downloads: false
+  download_bandwidth_cap_kbps: 16000
+  send_analytics: false
+  enable_gapless: true
+  enable_m4p: true
+}
+auth_status: OK
+auth_error: false
+
+2014-06-19 21:34:38,578 - gmusicapi.Musicmanager3 (musicmanager:220) [INFO]: successful upauth
+2014-06-19 21:34:38,589 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'c98db80f-1ea3-3f93-9ffa-9cbc1279cca7', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:34:39,042 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=e6ff0339e57b119d&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=c98db80f-1ea3-3f93-9ffa-9cbc1279cca7&ip=0.0.0.0&ipbits=0&expire=1403238966&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=166EE983A94F677EA4C7BC3CF78D95AC81E76832.4B54B54A777E70D88B2591612145AF39D712B853&key=sj3'}
+2014-06-19 21:34:39,049 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=e6ff0339e57b119d&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:34:41,013 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 806000 bytes; disposition: 'attachment; filename="02 - 02 Owl, Barn - Territorial scream.mp3"; filename*=UTF-8\'\'02%20-%2002%20Owl%2C%20Barn%20-%20Territorial%20scream.mp3'
+2014-06-19 21:34:41,667 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'6311801f-968e-3a9c-83fd-abd81a54809b', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:34:41,821 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=1228fcbe06e767f6&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=6311801f-968e-3a9c-83fd-abd81a54809b&ip=0.0.0.0&ipbits=0&expire=1403238969&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=B03837BF871F65CEF512F35A450372C4510C90C9.34F6DE3DB3E83A9FC1BE421632C07F79ABFE1291&key=sj3'}
+2014-06-19 21:34:41,828 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=1228fcbe06e767f6&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:34:43,204 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 1110075 bytes; disposition: 'attachment; filename="20 - 20 Owl, Northern Hawk - Alarm squeals.mp3"; filename*=UTF-8\'\'20%20-%2020%20Owl%2C%20Northern%20Hawk%20-%20Alarm%20squeals.mp3'
+2014-06-19 21:34:43,536 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'eb621ab1-7be3-31d7-a768-2a0abe400856', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:34:43,677 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=9c12da1d0ea89b81&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=eb621ab1-7be3-31d7-a768-2a0abe400856&ip=0.0.0.0&ipbits=0&expire=1403238971&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=AFCA8F5DB9972E1CA48B03F2B02F3C4D38DAF622.A1E615ABB78A61B5F272B3848973F9F37FCAEC11&key=sj3'}
+2014-06-19 21:34:43,680 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=9c12da1d0ea89b81&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:34:46,017 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 1243822 bytes; disposition: 'attachment; filename="56 - 56 Owl, Snowy - Female mewing whistle.mp3"; filename*=UTF-8\'\'56%20-%2056%20Owl%2C%20Snowy%20-%20Female%20mewing%20whistle.mp3'
+2014-06-19 21:34:46,346 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'79c5c31f-8fdf-3d9d-b407-a3147599b6fe', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:34:46,512 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=4484f3d28f8aeaff&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=79c5c31f-8fdf-3d9d-b407-a3147599b6fe&ip=0.0.0.0&ipbits=0&expire=1403238973&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=5B6851566F88B0931156F114EDDE587C99ECE180.8F3F234B5019A2AA312AB5913F22757849149733&key=sj3'}
+2014-06-19 21:34:46,515 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=4484f3d28f8aeaff&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:34:50,900 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 4656718 bytes; disposition: 'attachment; filename="02 - From Afar.mp3"; filename*=UTF-8\'\'02%20-%20From%20Afar.mp3'
+2014-06-19 21:34:51,276 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'eeb6eb89-24da-3139-a45a-21729425a55c', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:34:51,417 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=c44fd4a78aed1d1b&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=eeb6eb89-24da-3139-a45a-21729425a55c&ip=0.0.0.0&ipbits=0&expire=1403238978&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=4BB1196089459544497FF46C34248DEDC809DBC6.745064C0FB2932402690F08615F945A8D628BEB9&key=sj3'}
+2014-06-19 21:34:51,421 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=c44fd4a78aed1d1b&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:34:53,839 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 1709833 bytes; disposition: 'attachment; filename="98 - 98 Owl, Barred - Female hoo-aw.mp3"; filename*=UTF-8\'\'98%20-%2098%20Owl%2C%20Barred%20-%20Female%20hoo-aw.mp3'
+2014-06-19 21:34:54,411 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'3c8d38a3-c9c7-3418-97fb-1f34f140387a', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:34:54,538 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=6e84668869d32ed9&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=3c8d38a3-c9c7-3418-97fb-1f34f140387a&ip=0.0.0.0&ipbits=0&expire=1403238981&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=D7E7D489939382F28F8DFF642F2A9C7A105C7291.C56CB5AFE646231448F56CCDB083B50417E8763&key=sj3'}
+2014-06-19 21:34:54,542 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=6e84668869d32ed9&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:34:56,214 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 928263 bytes; disposition: 'attachment; filename="53 - 53 Owl, Snowy - Male territorial hoot.mp3"; filename*=UTF-8\'\'53%20-%2053%20Owl%2C%20Snowy%20-%20Male%20territorial%20hoot.mp3'
+2014-06-19 21:34:56,605 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'beed3605-5841-36b5-a68e-3819436169a8', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:34:56,726 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=8de13469d7b9f459&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=beed3605-5841-36b5-a68e-3819436169a8&ip=0.0.0.0&ipbits=0&expire=1403238984&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=CBB173AEB3DE0139339FAE81925A90225869BF46.A37533AA34B55CF81E6B258DAB470B152FD5AC10&key=sj3'}
+2014-06-19 21:34:56,730 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=8de13469d7b9f459&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:34:58,739 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 489394 bytes; disposition: 'attachment; filename="87 - 87 Owl, Short-eared - Bark call.mp3"; filename*=UTF-8\'\'87%20-%2087%20Owl%2C%20Short-eared%20-%20Bark%20call.mp3'
+2014-06-19 21:34:59,102 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'ef0e0fe4-a960-3116-b436-0e0c7fed6499', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:34:59,232 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=8ce25b63e8141335&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=ef0e0fe4-a960-3116-b436-0e0c7fed6499&ip=0.0.0.0&ipbits=0&expire=1403238986&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=323D5E0852601B8EF0FEA2A513272F8892BB4C7.B61EE4DB8BE17D8C8803EE5A641E785C4D42C499&key=sj3'}
+2014-06-19 21:34:59,237 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=8ce25b63e8141335&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:35:03,772 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 1709891 bytes; disposition: 'attachment; filename="46 - 46 Owl, Great Horned - Female squawk, male territorial hoot.mp3"; filename*=UTF-8\'\'46%20-%2046%20Owl%2C%20Great%20Horned%20-%20Female%20squawk%2C%20male%20territorial%20hoot.mp3'
+2014-06-19 21:35:04,332 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'd234ec25-b1d3-3c5b-ab14-5b76aecc8166', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:35:04,473 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=7665da754577180b&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=d234ec25-b1d3-3c5b-ab14-5b76aecc8166&ip=0.0.0.0&ipbits=0&expire=1403238991&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=7395257617BA7BBE404CB15261C2DD13ACB58881.387EB195BC919C262D1EF2D7E09A585A4BF4D08A&key=sj3'}
+2014-06-19 21:35:04,477 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=7665da754577180b&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:35:14,332 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 11047071 bytes; disposition: 'attachment; filename="02 - Lady In Black (Uriah Heep Cover).mp3"; filename*=UTF-8\'\'02%20-%20Lady%20In%20Black%20(Uriah%20Heep%20Cover).mp3'
+2014-06-19 21:35:14,713 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'525893b6-b30d-3558-9bb4-4c20a9a671b4', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:35:14,841 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=f37b92eaf524a4aa&itag=25&source=skyjam&o=05378676383743642721&uits=1&tid=525893b6-b30d-3558-9bb4-4c20a9a671b4&ip=0.0.0.0&ipbits=0&expire=1403239002&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=33C9672E88F7FF9BF8CE5AA619C09EFDC1F62F7B.BFF40FB7F4C79B9EB0D1FD89C1126483AB6587DD&key=sj3'}
+2014-06-19 21:35:14,845 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=f37b92eaf524a4aa&itag=25&source=skyjam&o=05378676383743...'], kwargs={})
+2014-06-19 21:35:21,750 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 8607227 bytes; disposition: 'attachment; filename="04 - Guardians Of Fate.mp3"; filename*=UTF-8\'\'04%20-%20Guardians%20Of%20Fate.mp3'
+2014-06-19 21:35:22,125 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: GetDownloadLink(args=[u'6147b1a1-02bb-37f2-be71-0c8c7041d7c9', '00:25:64:F3:E8:60'], kwargs={})
+2014-06-19 21:35:22,250 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: {u'url': u'https://sj.googleusercontent.com/download?id=a5fbf0706dd65d7e&itag=25&source=skyjam_user_upload&o=05378676383743642721&uits=1&tid=6147b1a1-02bb-37f2-be71-0c8c7041d7c9&ip=0.0.0.0&ipbits=0&expire=1403239009&sparams=id,itag,source,o,uits,tid,ip,ipbits,expire&signature=3FB705CA7985005ED175635BE7A6C80B4D1B39F2.A89FC77DBEC6867A630DE62B11A274CD90E80358&key=sj3'}
+2014-06-19 21:35:22,255 - gmusicapi.Musicmanager3 (shared:201) [DEBUG]: DownloadTrack(args=[u'https://sj.googleusercontent.com/download?id=a5fbf0706dd65d7e&itag=25&source=skyjam_user_upload&o=05...'], kwargs={})
+2014-06-19 21:35:24,562 - gmusicapi.Musicmanager3 (shared:242) [DEBUG]: code: 200; size: 1563585 bytes; disposition: 'attachment; filename="61 - 61 Owl, Northern Saw-whet - Male advertising song.mp3"; filename*=UTF-8\'\'61%20-%2061%20Owl%2C%20Northern%20Saw-whet%20-%20Male%20advertising%20song.mp3'
+!-- begin debug log --!
+version: 3.1.0
+logging to: .\gmusicapi.log
+2014-06-19 21:39:57,187 - gmusicapi.Mobileclient1 (shared:70) [INFO]: initialized
+2014-06-19 21:39:57,187 - gmusicapi.Mobileclient1 (shared:93) [INFO]: logged out
+2014-06-19 21:40:03,733 - gmusicapi.Mobileclient2 (shared:70) [INFO]: initialized
+2014-06-19 21:40:03,734 - gmusicapi.Mobileclient2 (shared:93) [INFO]: logged out
+2014-06-19 21:40:03,769 - gmusicapi.Mobileclient2 (shared:204) [DEBUG]: ClientLogin(<omitted>)
+2014-06-19 21:40:04,766 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: Init(args=[], kwargs={})
+2014-06-19 21:40:05,447 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: 
+2014-06-19 21:40:05,448 - gmusicapi.Mobileclient2 (mobileclient:41) [INFO]: authenticated
+2014-06-19 21:40:05,450 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: ListTracks(args=[], kwargs={'start_token': None, 'max_results': 20000})
+2014-06-19 21:40:08,052 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: {u'kind': u'sj#trackList', u'data': {u'items': ['<2112 tracks>']}}
+!-- begin debug log --!
+version: 3.1.0
+logging to: .\gmusicapi.log
+2014-06-19 21:41:30,509 - gmusicapi.Mobileclient1 (shared:70) [INFO]: initialized
+2014-06-19 21:41:30,509 - gmusicapi.Mobileclient1 (shared:93) [INFO]: logged out
+2014-06-19 21:41:37,130 - gmusicapi.Mobileclient2 (shared:70) [INFO]: initialized
+2014-06-19 21:41:37,131 - gmusicapi.Mobileclient2 (shared:93) [INFO]: logged out
+2014-06-19 21:41:37,167 - gmusicapi.Mobileclient2 (shared:204) [DEBUG]: ClientLogin(<omitted>)
+2014-06-19 21:41:38,085 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: Init(args=[], kwargs={})
+2014-06-19 21:41:38,760 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: 
+2014-06-19 21:41:38,762 - gmusicapi.Mobileclient2 (mobileclient:41) [INFO]: authenticated
+2014-06-19 21:41:38,769 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: ListTracks(args=[], kwargs={'start_token': None, 'max_results': 20000})
+2014-06-19 21:41:40,720 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: {u'kind': u'sj#trackList', u'data': {u'items': ['<2112 tracks>']}}
+!-- begin debug log --!
+version: 3.1.0
+logging to: .\gmusicapi.log
+2014-06-19 21:46:31,043 - gmusicapi.Mobileclient1 (shared:70) [INFO]: initialized
+2014-06-19 21:46:31,043 - gmusicapi.Mobileclient1 (shared:93) [INFO]: logged out
+2014-06-19 21:46:44,102 - gmusicapi.Mobileclient2 (shared:70) [INFO]: initialized
+2014-06-19 21:46:44,102 - gmusicapi.Mobileclient2 (shared:93) [INFO]: logged out
+2014-06-19 21:46:44,125 - gmusicapi.Mobileclient2 (shared:204) [DEBUG]: ClientLogin(<omitted>)
+2014-06-19 21:46:45,084 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: Init(args=[], kwargs={})
+2014-06-19 21:46:45,819 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: 
+2014-06-19 21:46:45,819 - gmusicapi.Mobileclient2 (mobileclient:41) [INFO]: authenticated
+2014-06-19 21:46:45,825 - gmusicapi.Mobileclient2 (shared:201) [DEBUG]: ListTracks(args=[], kwargs={'start_token': None, 'max_results': 20000})
+2014-06-19 21:46:47,818 - gmusicapi.Mobileclient2 (shared:242) [DEBUG]: {u'kind': u'sj#trackList', u'data': {u'items': ['<2112 tracks>']}}

@@ -12,27 +12,20 @@ import os
 import subprocess
 import re
 
+#env = "windows_desktop"
 itunes_xml_path_windows = "C:\Users\Kai\Music\iTunes\iTunes Music Library.xml"
 itunes_path_windows = 'C:\\Program Files (x86)\\iTunes\\iTunes.exe'
 artist_folder_path_windows = "C:\\Users\\Kai\\Music\\Artists\\"
 
-env = "windows_desktop"
-=======
+#env = "mac_laptop"
 itunes_xml_path_mac = "/Users/administrator/Music/iTunes/iTunes Music Library.xml"
 itunes_path_mac = "/Applications/iTunes.app"
 artist_folder_path_mac = "/Users/administrator/Music/Artists"
 
-env = "mac_laptop"
-
-if env == "windows_desktop":
-    itunes_xml_path = itunes_xml_path_windows
-    itunes_path = itunes_path_windows
-    artist_folder_path = artist_folder_path_windows
-
-elif env == "mac_laptop":
-    itunes_xml_path = itunes_xml_path_mac
-    itunes_path = itunes_path_mac
-    artist_folder_path = artist_folder_path_mac
+envAliases = [
+    ['windows_desktop', 'w'],
+    ['mac_laptop', 'm']
+]
 
 default_email = 'kaimarshland@gmail.com'
 
@@ -49,6 +42,8 @@ def ask_for_credentials():
 
     while not logged_in and attempts < 3:
         email = raw_input('Email: ')
+        if email == "k":
+            email = default_email
         password = getpass()
 
         stuff = api_from_email_and_password(email, password)
@@ -246,11 +241,51 @@ def write_library(name, library):
     fo.close()
     print "done."
 
+def load_environment():
+    
+    env = raw_input("What environment?")
+    
+    oneFound = False
+    realenv = ''
+    for environment in envAliases:
+        thisone = False
+        for alias in environment:
+            if alias == env:
+                thisone = True
+                break
+        
+        if thisone:
+            oneFound = True
+            realenv = environment[0]
+            break
+    
+    
+    if oneFound:
+        set_environment(realenv)
+
+def set_environment(env):
+    
+    global itunes_xml_path
+    global itunes_path
+    global artist_folder_path
+    
+    if env == "windows_desktop":
+        itunes_xml_path = itunes_xml_path_windows
+        itunes_path = itunes_path_windows
+        artist_folder_path = artist_folder_path_windows
+    
+    elif env == "mac_laptop":
+        itunes_xml_path = itunes_xml_path_mac
+        itunes_path = itunes_path_mac
+        artist_folder_path = artist_folder_path_mac
+
 def main():
     #print_library(google_play_connection())
     #print_library(itunes_connection())
     #itunes_connection()
     #import_song("C:\\Users\\Kai\\Music\\Artists\\Ensiferum\\09 - Treacherous Gods.mp3")
+    
+    load_environment()
     
     not_in_itunes, not_in_play = compare_libraries(google_play_connection(), itunes_connection())
     write_library("not_in_itunes.txt", not_in_itunes)
@@ -261,7 +296,6 @@ def main():
     print "%d not in Google Play" % (len(not_in_play))
     print 
     
-    download_and_import_library(not_in_itunes)
     if raw_input("Do you want to download the files? (y/n)") == "y":
         download_and_import_library(not_in_itunes)
     
