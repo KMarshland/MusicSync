@@ -19,7 +19,7 @@ artist_folder_path_windows = "C:\\Users\\Kai\\Music\\Artists\\"
 join_character_windows = "\\"
 
 #env = "mac_laptop"
-itunes_xml_path_mac = "/Users/administrator/Music/iTunes/iTunes Music Library.xml"
+itunes_xml_path_mac = "/Users/administrator/Music/iTunes/iTunes Library.xml"
 itunes_path_mac = "/Applications/iTunes.app"
 artist_folder_path_mac = "/Users/administrator/Music/Artists/"
 join_character_mac = "/"
