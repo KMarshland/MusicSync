@@ -116,7 +116,7 @@ def itunes_connection():
 
 def download_library(library):
     mm = Musicmanager()
-    #mm.perform_oauth()
+    mm.perform_oauth()
     mm.login()
     
     #for song in library:
@@ -125,7 +125,7 @@ def download_library(library):
     
 def download_and_import_library(library):
     mm = Musicmanager()
-    #mm.perform_oauth()
+    mm.perform_oauth()
     mm.login()
     
     counter = 0
