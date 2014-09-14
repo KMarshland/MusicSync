@@ -125,7 +125,7 @@ def download_library(library):
     
 def download_and_import_library(library):
     mm = Musicmanager()
-    mm.perform_oauth()
+    #mm.perform_oauth()
     mm.login()
     
     counter = 0
@@ -175,10 +175,11 @@ def download_song(mm, song):
     fullname = re.sub("\s", " ", fullname)
     #print " to " + fullname,
     
-    with open(fullname, 'wb') as f:
-        f.write(audio)
+    if not os.path.exists(fullname):
+        with open(fullname, 'wb') as f:
+            f.write(audio)
     print "complete",
-        
+    
     try:
         return fullname
     except:
