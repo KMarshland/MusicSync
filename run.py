@@ -173,6 +173,8 @@ def download_song(mm, song):
     fullname = unidecode(fullname)
     #fullname = fullname.encode('ascii', 'xmlcharrefreplace')
     fullname = re.sub("\s", " ", fullname)
+    fullname = re.sub("'", "", fullname)
+    fullname = re.sub('"', "", fullname)
     #print " to " + fullname,
     
     if not os.path.exists(fullname):
